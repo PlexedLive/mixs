@@ -11,6 +11,7 @@ groupama/data/base_pno.*
 .idea/
 *.mp4
 /raw_data/
+*.wav
 
 
 
