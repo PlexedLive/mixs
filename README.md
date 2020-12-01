@@ -1,12 +1,10 @@
 # Data analysis
-- Document here the project: mixs
-- Description: Project Description
-- Data Source:
-- Type of analysis:
+- Project name: mixs
+- Description: Audio signal splitter
+- Data Source: MUSDB18
+- Type of analysis: Machine/Deep Learning
 
-Please document the project the better you can.
-
-# Stratup the project
+# Startup the project
 
 The initial setup.
 
@@ -35,7 +33,7 @@ If your project is not set please add it:
   $ git push -u origin --tags
 ```
 
-Functionnal test with a script:
+Functional test with a script:
 ```bash
   $ cd /tmp
   $ mixs-run
@@ -57,14 +55,14 @@ Clone the project and install it:
   $ pip install -r requirements.txt
   $ make clean install test                # install and test
 ```
-Functionnal test with a script:
+Functional test with a script:
 ```bash
   $ cd /tmp
   $ mixs-run
-``` 
+```
 
-# Continus integration
-## Github 
+# Continuous integration
+## Github
 Every push of `master` branch will execute `.github/workflows/pythonpackages.yml` docker jobs.
 ## Gitlab
 Every push of `master` branch will execute `.gitlab-ci.yml` docker jobs.
