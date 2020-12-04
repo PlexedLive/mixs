@@ -1,6 +1,9 @@
 from spleeter.separator import Separator
 from spleeter.audio.adapter import  get_default_audio_adapter
-from youtube import get_audio_directory, clear_wavs
+# from .youtube import YouTubeTools
+
+# tools = YouTubeTools("123")
+
 
 
 def splitter(path):
@@ -11,7 +14,7 @@ def splitter(path):
     audio_loader = get_default_audio_adapter()
     waveform, rate = audio_loader.load(path, sample_rate=None)
     prediction = separator.separate(waveform)
-    clear_wavs()
+    # tools.clear_wavs()
     return prediction
 
 
