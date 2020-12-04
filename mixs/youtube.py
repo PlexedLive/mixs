@@ -11,7 +11,7 @@ class YouTubeTools():
     def __init__(self, full_url):
         self.url = full_url.split("watch?v=", 1)[1]
 
-    # def embed_return(self):
+    # def get_embed(self):
     #     '''
     #     this method takes the input url and returns
     #     the youtube video in embedded HTML format
