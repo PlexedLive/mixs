@@ -4,14 +4,12 @@ import youtube_dl
 import os
 
 
-INPUT = 'https://www.youtube.com/watch?v=0SJIgTLe0hc'
 EMBED_BASE = "https://www.youtube.com/embed/%s?rel=0&amp;controls=0&amp;showinfo=0"
 
 class YouTubeTools():
 
-    def __init__(self):
-        self.input = INPUT
-        self.url = INPUT.split("watch?v=", 1)[1]
+    def __init__(self, full_url):
+        self.url = full_url.split("watch?v=", 1)[1]
 
     def embed_return(self):
         '''
@@ -25,7 +23,7 @@ class YouTubeTools():
     def give_url(self):
         return self.url
 
-    def get_audio_directory(self):
+    def get_audio_and_directory(self):
         '''
         takes the url link, downloads the audio,
         returns the name of the file to be used
