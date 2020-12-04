@@ -1,6 +1,7 @@
 from os.path import isfile
 from os.path import dirname
 from .youtube import YouTubeTools
+from mixs.split import splitter
 
 version_file = '{}/version.txt'.format(dirname(__file__))
 
