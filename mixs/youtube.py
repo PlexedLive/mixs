@@ -16,11 +16,14 @@ class YouTubeTools():
     def embed_return(self):
         '''
         this method takes the input url and returns
-        the youtube video in embeded HTML format
+        the youtube video in embedded HTML format
         '''
         embed_url = EMBED_BASE % (self.url)
         # return HTML('<iframe width="560" height="315" src=' + embed_url + 'frameborder="0" allowfullscreen></iframe>')
         return IFrame(src=embed_url, width=560, height=315)
+
+    def give_url(self):
+        return self.url
 
     def get_audio_directory(self):
         '''
