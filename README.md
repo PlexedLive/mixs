@@ -4,8 +4,6 @@
 - Data Source: MUSDB18
 - Type of analysis: Machine/Deep Learning
 
-# This is the production branch
-
 # Startup the project
 
 The initial setup.
