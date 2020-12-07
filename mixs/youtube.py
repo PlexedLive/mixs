@@ -8,7 +8,7 @@ EMBED_BASE = "https://www.youtube.com/embed/%s?rel=0&amp;controls=0&amp;showinfo
 
 class YouTubeTools():
 
-    def __init__(self, full_url):
+    def __init__(self, full_url='https://www.youtube.com/watch?v=yPYZpwSpKmA'):
         self.url = full_url.split("watch?v=", 1)[1]
 
     # def get_embed(self):
@@ -36,14 +36,13 @@ class YouTubeTools():
             'preferredcodec': 'wav',
             'preferredquality': '44100',
         }],
-        'outtmpl': '%(title)s.wav',
+        'outtmpl': 'song.wav',
         }
 
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-            info = ydl.extract_info(self.url, download=False)
             status = ydl.download([self.url])
 
-        self.file_name = info.get('title', None) + '.wav'
+        self.file_name = 'song.wav'
 
         return self.file_name
 
